@@ -2,7 +2,7 @@
 
 ![logo](_media/logo.png)
 
-![GitHub](https://img.shields.io/github/license/agnostech/flutter_amplify) [![GitHub issues](https://img.shields.io/github/issues/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/issues) [![GitHub forks](https://img.shields.io/github/forks/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/network) [![GitHub stars](https://img.shields.io/github/stars/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/stargazers) [![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fagnostech%2Fflutter_amplify%2F)
+![GitHub](https://img.shields.io/github/license/agnostech/flutter_amplify) [![GitHub issues](https://img.shields.io/github/issues/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/issues) [![GitHub forks](https://img.shields.io/github/forks/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/network) [![GitHub stars](https://img.shields.io/github/stars/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/stargazers)
 
 # flutterAmplify
 
