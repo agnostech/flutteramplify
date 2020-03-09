@@ -1,3 +1,25 @@
-# Headline
+<!-- docs/README.md -->
 
-> An awesome project.
+![logo](_media/logo.png)
+
+![GitHub](https://img.shields.io/github/license/agnostech/flutter_amplify) [![GitHub issues](https://img.shields.io/github/issues/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/issues) [![GitHub forks](https://img.shields.io/github/forks/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/network) [![GitHub stars](https://img.shields.io/github/stars/agnostech/flutter_amplify)](https://github.com/agnostech/flutter_amplify/stargazers) [![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fagnostech%2Fflutter_amplify%2F)
+
+# flutterAmplify
+
+> flutterAmplify is a collection of flutter plugins for AWS Amplify SDK.
+
+# Features / APIs
+
+- [Authentication](https://github.com/agnostech/flutter_amplify/tree/master/flutter_aws_amplify_cognito): APIs and building blocks for developers who want to create user authentication experiences.
+
+- [Analytics](https://github.com/agnostech/flutter_amplify)(_coming soon_): Easily collect analytics data for your app. Analytics data includes user sessions and other custom events that you want to track in your app.
+
+- [API](https://github.com/agnostech/flutter_amplify)(_coming soon_): Provides a simple solution when making HTTP requests. It provides an automatic, lightweight signing process which complies with AWS Signature Version 4.
+
+- [Storage](https://github.com/agnostech/flutter_amplify)(_coming soon_): Provides a simple mechanism for managing user content for your app in public, protected or private storage buckets.
+
+- [Push Notifications](https://github.com/agnostech/flutter_amplify)(_coming soon_): Allows you to integrate push notifications in your app with Amazon Pinpoint targeting and campaign management support.
+
+- [PubSub](https://github.com/agnostech/flutter_amplify)(_coming soon_): Provides connectivity with cloud-based message-oriented middleware.
+
+# Getting Started
