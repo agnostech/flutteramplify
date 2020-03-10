@@ -109,10 +109,10 @@ Since you haven’t logged in yet it will print a state of `SIGNED_OUT`
 # State Tracking
 `FlutterAwsAmplifyCognito` offers on-demand querying for the “login state” of a user in the application. For instance, you can check if the user is signed-in or not and present an appropriate screen. This is done through a couple of mechanisms:
 - `FlutterAwsAmplifyCognito.isSignedIn()` return a BOOLEAN for the most simple use cases
-- `FlutterAwsAmplifyCognito.currentUserStatus()` used for more advanced scenarios, such as determining if the user has Guest credentials, Authenticated with User Pools, has Federated credentials, or has signed out.
+- `FlutterAwsAmplifyCognito.currentUserState()` used for more advanced scenarios, such as determining if the user has Guest credentials, Authenticated with User Pools, has Federated credentials, or has signed out.
 
 ```dart
-FlutterAwsAmplifyCognito.currentUserStatus()
+FlutterAwsAmplifyCognito.currentUserState()
     .then((FlutterCognitoUserStatus userStatus) {
       switch(userStatus) {
 
@@ -666,12 +666,12 @@ Note: Once you call `forget`, you can update the status of the device in the sam
 ## Get Device Details
 ```dart
 FlutterAwsAmplifyCognito.getDeviceDetails()
-    .then((deviceDetails){
-        print('createDate: ${deviceDetails['createDate']}'); //UTC String
-        print('deviceKey: ${deviceDetails['deviceKey']}');
-        print('lastAuthenticatedDate: ${deviceDetails['lastAuthenticatedDate']}'); // UTC String
-        print('lastModifiedDate: ${deviceDetails['lastModifiedDate']}'); // UTC String
-        print('attributes: ${deviceDetails['attributes']}'); // Map of Strings
+    .then((Device deviceDetails){
+        print('createDate: ${deviceDetails. createDate}');
+        print('deviceKey: ${deviceDetails.deviceKey}');
+        print('lastAuthenticatedDate: ${deviceDetails.lastAuthenticatedDate}');
+        print('lastModifiedDate: ${deviceDetails.lastModifiedDate}'); 
+        print('attributes: ${deviceDetails.attributes}');
     }).catchError((error) {
         print(error);
     });
