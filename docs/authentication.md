@@ -507,7 +507,106 @@ FlutterAwsAmplifyCognito.getCredentials()
 > Availability Note:<br>
 >Currently, the federation feature in the AWSMobileClient supports Cognito Identity Pools only.
 
-To be continued....
+Check the instructions for setting Federated Sign In [here](https://aws-amplify.github.io/docs/sdk/android/authentication#federated-identities-social-sign-in)
+
+Available options for sign in are `IdentityProvider.GOOGLE`, `IdentityProvider.AMAZON`, `IdentityProvider.TWITTER`, `IdentityProvider.FACEBOOK`, `IdentityProvider.DEVELOPER`
+
+```dart
+FlutterAwsAmplifyCognito.federatedSignIn(IdentityProvider.GOOGLE, "token")
+    .then((FederatedSignInResult result) {
+      switch(result.userStatus) {
+        case UserStatus.GUEST:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_IN:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.UNKNOWN:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.ERROR:
+          // TODO: Handle this case.
+          break;
+      }
+    }).catchError((error) {
+      print(error);
+    });
+```
+
+For `SAML` based authentication with custom ARN you can pass the `customRoleARN` as
+
+```dart
+FlutterAwsAmplifyCognito.federatedSignIn(IdentityProvider.GOOGLE, "token", "your_custom_role")
+    .then((FederatedSignInResult result) {
+      switch(result.userStatus) {
+        case UserStatus.GUEST:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_IN:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.UNKNOWN:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.ERROR:
+          // TODO: Handle this case.
+          break;
+      }
+    }).catchError((error) {
+      print(error);
+    });
+```
+
+For developer authenticated identities with Cognito Identity pass the `Cognito Identity ID` as the last parameter
+```dart
+FlutterAwsAmplifyCognito.federatedSignIn(IdentityProvider.GOOGLE, "token", null, "your_cognito_identity_id")
+    .then((FederatedSignInResult result) {
+      switch(result.userStatus) {
+        case UserStatus.GUEST:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_IN:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.UNKNOWN:
+          // TODO: Handle this case.
+          break;
+        case UserStatus.ERROR:
+          // TODO: Handle this case.
+          break;
+      }
+    }).catchError((error) {
+      print(error);
+    });
+```
+
 
 # Using Device Features
 You can use the device related features of Amazon Cognito UserPools by enabling the `Devices` features. Go to your Cognito UserPool, click on `Devices` in Left Navigation Menu and chose one of `User Opt In` or `Always`.
