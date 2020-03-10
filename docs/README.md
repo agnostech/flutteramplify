@@ -23,3 +23,10 @@
 - [PubSub](https://github.com/agnostech/flutter_amplify)(_coming soon_): Provides connectivity with cloud-based message-oriented middleware.
 
 # Getting Started
+
+- Select the required Amplify Flutter plugin
+- Install the plugin from pub.dev
+- Follow the instructions mentioned here for APIs and references
+
+# License
+[MIT](https://github.com/agnostech/flutter_amplify)

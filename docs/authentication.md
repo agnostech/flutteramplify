@@ -461,10 +461,10 @@ When using Authentication with `FlutterAwsAmplifyCognito`, you don’t need to r
 ```dart
 //All the tokens together
 FlutterAwsAmplifyCognito.getTokens()
-    .then((tokens) {
-      print('Access Token: ${tokens['accessToken']}');
-      print('ID Token: ${tokens['idToken']}');
-      print('Refresh Token: ${tokens['refreshToken']}');
+    .then((Tokens tokens) {
+      print('Access Token: ${tokens.accessToken}');
+      print('ID Token: ${tokens.idToken}');
+      print('Refresh Token: ${tokens.refreshToken}');
     }).catchError((error) {
         print(error);
     });
@@ -495,9 +495,9 @@ FlutterAwsAmplifyCognito.getIdToken()
 ## AWS Credentials
 ```dart
 FlutterAwsAmplifyCognito.getCredentials()
-    .then((credentials) {
-        print('Secret Key: ${credentials['secretKey']}');
-        print('Access Key: ${credentials['accessKeyId']}');
+    .then((AWSCredentials credentials) {
+        print('Secret Key: ${credentials.secretKey}');
+        print('Access Key: ${credentials.accessKey}');
     }).catchError((error) {
         print(error);
     });
