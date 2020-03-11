@@ -143,7 +143,7 @@ This allows you to write workflows in your application based on the state of the
 
 ```dart
 FlutterAwsAmplifyCognito.addUserStateListener
-        .listen((FlutterCognitoUserStatus userStatus) {
+        .listen((UserStatus userStatus) {
           switch(userStatus) {
             
             case UserStatus.GUEST:
