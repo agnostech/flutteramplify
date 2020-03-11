@@ -76,27 +76,26 @@ import 'package:flutter_aws_amplify_cognito/flutter_aws_amplify_cognito.dart'
 # Initialization
 ```dart
 FlutterAwsAmplifyCognito.initialize()
-        .then((FlutterCognitoUserStatus status) {
+        .then((UserStatus status) {
           switch (status) {
-            case FlutterCognitoUserStatus.GUEST:
+            case UserStatus.GUEST:
               break;
-              
-            case FlutterCognitoUserStatus.SIGNED_IN:
+            case UserStatus.SIGNED_IN:
               // TODO: Handle this case.
               break;
-            case FlutterCognitoUserStatus.SIGNED_OUT:
+            case UserStatus.SIGNED_OUT:
               // TODO: Handle this case.
               break;
-            case FlutterCognitoUserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
+            case UserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
               // TODO: Handle this case.
               break;
-            case FlutterCognitoUserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
+            case UserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
               // TODO: Handle this case.
               break;
-            case FlutterCognitoUserStatus.UNKNOWN:
+            case UserStatus.UNKNOWN:
               // TODO: Handle this case.
               break;
-            case FlutterCognitoUserStatus.ERROR:
+            case UserStatus.ERROR:
               // TODO: Handle this case.
               break;
           }
@@ -113,30 +112,29 @@ Since you haven’t logged in yet it will print a state of `SIGNED_OUT`
 
 ```dart
 FlutterAwsAmplifyCognito.currentUserState()
-    .then((FlutterCognitoUserStatus userStatus) {
+    .then((UserStatus userStatus) {
       switch(userStatus) {
 
-        case FlutterCognitoUserStatus.GUEST:
-          // TODO: Handle this case.
-          break;
-        case FlutterCognitoUserStatus.SIGNED_IN:
-          // TODO: Handle this case.
-          break;
-        case FlutterCognitoUserStatus.SIGNED_OUT:
-          // TODO: Handle this case.
-          break;
-        case FlutterCognitoUserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
-          // TODO: Handle this case.
-          break;
-        case FlutterCognitoUserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
-          // TODO: Handle this case.
-          break;
-        case FlutterCognitoUserStatus.UNKNOWN:
-          // TODO: Handle this case.
-          break;
-        case FlutterCognitoUserStatus.ERROR:
-          // TODO: Handle this case.
-          break;
+        case UserStatus.GUEST:
+                      break;
+                    case UserStatus.SIGNED_IN:
+                      // TODO: Handle this case.
+                      break;
+                    case UserStatus.SIGNED_OUT:
+                      // TODO: Handle this case.
+                      break;
+                    case UserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
+                      // TODO: Handle this case.
+                      break;
+                    case UserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
+                      // TODO: Handle this case.
+                      break;
+                    case UserStatus.UNKNOWN:
+                      // TODO: Handle this case.
+                      break;
+                    case UserStatus.ERROR:
+                      // TODO: Handle this case.
+                      break;
       }
     })
     .catchError((error) => print(error));
@@ -148,27 +146,26 @@ FlutterAwsAmplifyCognito.addUserStateListener
         .listen((FlutterCognitoUserStatus userStatus) {
           switch(userStatus) {
             
-            case FlutterCognitoUserStatus.GUEST:
-              // TODO: Handle this case.
-              break;
-            case FlutterCognitoUserStatus.SIGNED_IN:
-              // TODO: Handle this case.
-              break;
-            case FlutterCognitoUserStatus.SIGNED_OUT:
-              // TODO: Handle this case.
-              break;
-            case FlutterCognitoUserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
-              // TODO: Handle this case.
-              break;
-            case FlutterCognitoUserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
-              // TODO: Handle this case.
-              break;
-            case FlutterCognitoUserStatus.UNKNOWN:
-              // TODO: Handle this case.
-              break;
-            case FlutterCognitoUserStatus.ERROR:
-              // TODO: Handle this case.
-              break;
+            case UserStatus.GUEST:
+                          break;
+                        case UserStatus.SIGNED_IN:
+                          // TODO: Handle this case.
+                          break;
+                        case UserStatus.SIGNED_OUT:
+                          // TODO: Handle this case.
+                          break;
+                        case UserStatus.SIGNED_OUT_FEDERATED_TOKENS_INVALID:
+                          // TODO: Handle this case.
+                          break;
+                        case UserStatus.SIGNED_OUT_USER_POOLS_TOKENS_INVALID:
+                          // TODO: Handle this case.
+                          break;
+                        case UserStatus.UNKNOWN:
+                          // TODO: Handle this case.
+                          break;
+                        case UserStatus.ERROR:
+                          // TODO: Handle this case.
+                          break;
           }
     })
         .onError((error) {
