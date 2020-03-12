@@ -10,7 +10,7 @@
 
 # Getting started
 
-Follow the instructions mentioned on pub.dev to install the flutter plugin.
+Follow the instructions mentioned on [pub.dev](https://pub.dev/packages/flutter_aws_amplify_cognito) to install the flutter plugin.
 
 ## Android
 

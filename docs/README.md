@@ -10,7 +10,7 @@
 
 # Features / APIs
 
-- [Authentication](https://github.com/agnostech/flutter_amplify/tree/master/flutter_aws_amplify_cognito): APIs and building blocks for developers who want to create user authentication experiences.
+- [Authentication](https://pub.dev/packages/flutter_aws_amplify_cognito): APIs and building blocks for developers who want to create user authentication experiences.
 
 - [Analytics](https://github.com/agnostech/flutter_amplify)(_coming soon_): Easily collect analytics data for your app. Analytics data includes user sessions and other custom events that you want to track in your app.
 
